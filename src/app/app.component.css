@@ -1,0 +1,41 @@
+table{
+    border-collapse: collapse;
+}
+
+th
+{
+    padding: 10px 20px;
+    border: solid 1px #333;
+    font-weight:bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+th:hover{
+    background-color: black;
+    color: white;
+}
+td{
+    margin: 10px 0;
+    border: solid 1px #333;
+    padding: 2px 4px;
+    font: 16px monospace;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+}
+
+.tds{
+    transition: 0.4s;
+}
+.tds:hover{
+    background-color: lightgray;
+}
+
+h1{
+    position: relative;
+    left: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}

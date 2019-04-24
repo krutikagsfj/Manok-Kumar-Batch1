@@ -1,0 +1,25 @@
+<div style="text-align:left; width:500px;">
+  <h1>
+    Capgemini Mobile Store
+  </h1>
+
+  <table *ngIf="mobile">
+      
+      <tr>
+          <th (click) = "sortbyid()">Mobile Id</th>
+          <th (click) = "sortbyname()">Mobile Name</th>
+          <th (click) = "sortbyprice()">Mobile Price</th>
+          <th>Action</th>
+      </tr>
+
+      
+      <tr class="tds" *ngFor="let m of mobile | pipeSort:mobileSort">
+        <td class="tds">{{m.mobId}}</td>
+        <td class="tds">{{m.mobName}}</td>
+        <td class="tds">{{m.mobPrice | currency}}</td>
+        <td><input type="button" value="Delete" (click)="deleteItem(m)"></td>
+      </tr>
+  </table>
+</div>
+
+<router-outlet></router-outlet>
